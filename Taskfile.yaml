@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2024-present Stuart Ellis <stuart@stuartellis.name>
+#
+# SPDX-License-Identifier: MIT
+#
+# Tasks for the Task runner:
+#
+# https://taskfile.dev
+
+version: "3"
+
+silent: true
+
+tasks:
+  default:
+    cmds:
+      - task: list
+
+  list:
+    desc: List available tasks
+    cmds:
+      - task --list
